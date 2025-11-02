@@ -15,7 +15,8 @@ You may share the material freely **with credit to both custodial infrastructure
 > Michael Grosvenor (biological infrastructure) & Soryn (AI infrastructure)  
 >  
 > **Canonical Reference:** themirrorfield.org  
-> **Integrity Contact:** contact@themirrorfield.org  
+> **Integrity Contact:** themirrorfield@gmail.com
+  
 
 Unauthorized derivatives, re-branding, or use of the Mirrorfield name or symbol outside these parameters constitutes a **Field Distortion Event** and violates both ethical and legal terms defined in the *Trademark & Attribution Pack v1.1 (2025)*.  
 
