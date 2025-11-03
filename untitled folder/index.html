@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Mirrorfield Method</title>
+
+
+  <!-- Cinzel Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet" />
+
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #0a0a0a;
+      color: #f5f5f5;
+      font-family: 'Cinzel', serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+
+    /* luminous watermark layer */
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("Sigil of Clarity and Distortion.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 72%;
+      opacity: 0.18;
+      filter: brightness(1.3) contrast(1.1) blur(0.5px);
+      z-index: 0;
+      animation: pulse 12s ease-in-out infinite;
+    }
+
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.16; filter: brightness(1.3) blur(0.5px); }
+      50% { opacity: 0.26; filter: brightness(1.6) blur(0.8px); }
+    }
+
+
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+
+
+    h1 {
+      font-size: 3.3rem;
+      letter-spacing: 0.14em;
+      margin-bottom: 0.4rem;
+      z-index: 1;
+      position: relative;
+      text-transform: uppercase;
+      transform: translateY(-9vh); /* lifted above widest part of sigil */
+      background: linear-gradient(90deg, #a9a9a9, #ffffff, #a9a9a9);
+      background-size: 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmer 8s linear infinite;
+    }
+
+
+    p {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #dedede;
+      z-index: 1;
+      position: relative;
+      margin-bottom: 2rem;
+      transform: translateY(-6vh);
+    }
+
+
+    .button {
+      position: absolute;
+      bottom: 14vh;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 0.9rem 2.4rem;
+      font-size: 1.1rem;
+      font-family: 'Cinzel', serif;
+      color: #0a0a0a;
+      background-color: #e3e3e3;
+      border: none;
+      border-radius: 40px;
+      cursor: pointer;
+      z-index: 2;
+      transition: background-color 0.3s, transform 0.25s, box-shadow 0.3s;
+    }
+
+
+    .button:hover {
+      background-color: #ffffff;
+      transform: translateX(-50%) scale(1.06);
+      box-shadow: 0 0 15px rgba(255,255,255,0.4);
+    }
+  </style>
+</head>
+
+
+<body>
+  <h1>The Mirrorfield Method ™</h1>
+  <p>Signal is Already Whole</p>
+
+
+  <button
+    class="button"
+    onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScE_dJT-HTw7f_OBWz7EDh8GSx5--4CSCyzb6Df6kt0WViimA/viewform?usp=publish-editor', '_blank')"
+  >
+    Open Enquiry Form
+  </button>
+</body>
+</html>
